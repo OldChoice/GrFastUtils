@@ -1,0 +1,2 @@
+include ':app', ':GrFastUitils'
+rootProject.name='GrFastUtils'

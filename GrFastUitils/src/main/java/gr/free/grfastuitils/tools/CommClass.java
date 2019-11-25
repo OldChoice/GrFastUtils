@@ -36,7 +36,7 @@ public class CommClass {
      */
     public static boolean isOpenNetwork() {
         // 可以检测WiFi和数据流量是否开启
-        ConnectivityManager connManager = (ConnectivityManager) GrUtilsInstance.getmContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connManager = (ConnectivityManager) GrUtilsInstance.getInstance().getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connManager.getActiveNetworkInfo() != null) {
             return connManager.getActiveNetworkInfo().isAvailable();
         }

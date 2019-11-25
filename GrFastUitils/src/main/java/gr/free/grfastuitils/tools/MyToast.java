@@ -19,7 +19,7 @@ public class MyToast {
     /**
      * 上下文对象
      */
-    private static Context mContext = GrUtilsInstance.getmContext();
+    private static Context mContext = GrUtilsInstance.getInstance();
 
     /**
      * 短时间显示Toast

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- 横向割线 -->
+    <style name="divide_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#e8e8e8</item>
+    </style>
+</resources>

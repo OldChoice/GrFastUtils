@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_topback_submit" />
+
+        <View style="@style/divide_horizontal" />
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/choosepersionpersonmulti_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <cn.bingoogolapple.refreshlayout.BGAStickyNavLayout
+                style="@style/MatchAuto"
+                android:layout_marginBottom="@dimen/view_zero"
+                android:layout_marginTop="@dimen/view_zero"
+                android:paddingBottom="@dimen/view_zero"
+                android:paddingTop="@dimen/view_zero">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#f0f"
+                    android:gravity="center"
+                    android:text="sssssssssss"
+                    android:textColor="@color/colorPrimary" />
+
+                <gr.free.grfastuitils.myview.DeletableEditText
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_edittext_delete"
+                    android:hint="请输入姓名"
+                    android:imeOptions="actionSearch"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/choosepersionpersonmulti_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </cn.bingoogolapple.refreshlayout.BGAStickyNavLayout>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -30,7 +30,7 @@ public class DaoFilePahtUtils {
             return "";
         } else {
             //写数据库基础路径(后面添加当前APP的名字)
-            return sdCardPath + File.separator + PackageUtils.getAppName(GrUtilsInstance.getmContext());
+            return sdCardPath + File.separator + PackageUtils.getAppName(GrUtilsInstance.getInstance());
         }
     }
 }

@@ -18,7 +18,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         this.instance = this;
-        GrUtilsInstance.getInstance(getInstance());
+        GrUtilsInstance.getmContext(getInstance());
 
     }
 

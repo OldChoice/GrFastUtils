@@ -16,11 +16,11 @@ public class GrUtilsInstance {
      *
      * @param context
      */
-    public static void getInstance(Context context) {
+    public static void getmContext(Context context) {
         mContext = context;
     }
 
-    public static Context getmContext() {
+    public static Context getInstance() {
         return mContext;
     }
 

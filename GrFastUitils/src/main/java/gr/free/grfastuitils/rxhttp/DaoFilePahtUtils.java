@@ -5,6 +5,9 @@ import android.text.TextUtils;
 
 import java.io.File;
 
+import gr.free.grfastuitils.GrUtilsInstance;
+import gr.free.grfastuitils.tools.PackageUtils;
+
 /**
  * Create by guorui on 2019/11/25
  * Last update 2019/11/25
@@ -26,8 +29,8 @@ public class DaoFilePahtUtils {
         if (TextUtils.isEmpty(sdCardPath)) {
             return "";
         } else {
-            //写数据库基础路径
-            return sdCardPath + File.separator + "LoveReads";
+            //写数据库基础路径(后面添加当前APP的名字)
+            return sdCardPath + File.separator + PackageUtils.getAppName(GrUtilsInstance.getmContext());
         }
     }
 }

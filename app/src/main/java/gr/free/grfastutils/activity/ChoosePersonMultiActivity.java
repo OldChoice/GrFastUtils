@@ -38,7 +38,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-
+/**
+ * Create by guorui on 2020/1/3
+ * Last update 2020/1/3
+ * Description:使用网络访问功能
+ */
 public class ChoosePersonMultiActivity extends BaseActivity implements View.OnClickListener, BGARefreshLayout.BGARefreshLayoutDelegate, BGAOnItemChildClickListener, BGAOnRVItemClickListener {
 
     private ImageView ivBack;
@@ -90,7 +94,7 @@ public class ChoosePersonMultiActivity extends BaseActivity implements View.OnCl
 
     @Override
     public void setView() {
-        tvTitle.setText("选择维修人");
+        tvTitle.setText("选择人员功能");
 
         mRefreshLayout.setDelegate(this);
         BGARefreshViewHolder refreshViewHolder = new BGANormalRefreshViewHolder(ChoosePersonMultiActivity.this, true);

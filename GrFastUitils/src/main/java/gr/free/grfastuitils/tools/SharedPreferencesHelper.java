@@ -85,15 +85,15 @@ public class SharedPreferencesHelper {
         return sharedPreferences.getInt(key, defaultValue);
     }
 
-    public Object getBoolean(String key, Boolean defaultValue) {
+    public Boolean getBoolean(String key, Boolean defaultValue) {
         return sharedPreferences.getBoolean(key, defaultValue);
     }
 
-    public Object getFloat(String key, Float defaultValue) {
+    public Float getFloat(String key, Float defaultValue) {
         return sharedPreferences.getFloat(key, defaultValue);
     }
 
-    public Object getLong(String key, Long defaultValue) {
+    public Long getLong(String key, Long defaultValue) {
         return sharedPreferences.getLong(key, defaultValue);
     }
 
